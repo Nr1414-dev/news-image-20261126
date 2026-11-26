@@ -1,0 +1,40 @@
+# Refresh log — news-image-20261126 (DRAFT, 26 Nov 2026 ~07:15 WIB)
+# Status: DRAFT. 12 stories verified. Final image (36-40 stories) after the
+# evening refresh pass 26 Nov sore/malam UTC (= 27 Nov 00:00-07:00 WIB).
+# Rules: every added story needs title + source + URL + 26 Nov event date.
+# If in doubt about the date -> DISCARD. Do NOT fabricate scores/numbers.
+# Trap list (25 Nov and earlier, do NOT use as 26 Nov news): see research
+# file Section 2D (news-image-20261126-research.md).
+
+## DRAFT STORIES (12) — verified this morning
+# Format: ID | region | headline | source | URL | note
+M1 | EUROPE | EU leaders open special summit on EUR 1.78tn budget and EUR 45bn Ukraine loan | EU Insider | https://www.euinsider.eu/news/eu-crunch-week-balkans-summit-budget-ukraine-spain-2026 | Summit opens 26 Nov ~11:00 UTC, Brussels; conclusions Fri 27 Nov
+M2 | N. AMERICA | Thanksgiving Day — 81.5 million Americans travel; US markets closed | AAA via NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | 26 Nov all day (US)
+M3 | N. AMERICA | Thanksgiving nor'easter brings heavy rain, 40-55 mph gusts, coastal flooding | NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | FORECAST at draft time (23-24 Nov forecast) — refresh R7 must replace with ACTUAL 26 Nov impact numbers
+M4 | N. AMERICA | 100th Macy's Thanksgiving Day Parade — giant balloons at risk of grounding | NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | FORECAST at draft time — refresh R6: did the balloons fly or get grounded?
+M5 | N. AMERICA | NFL Thanksgiving tripleheader: Bears-Lions, Eagles-Cowboys, Chiefs-Bills | USA Today | https://www.usatoday.com/story/sports/nfl/2026/11/25/nfl-game-tonight-thanksgiving-schedule-week-12/92847679007/ | Games 26 Nov 13:00/16:30/20:20 ET — refresh R5 for final scores
+M6 | EUROPE | World Chess Championship Game 3 — Sindarov has White, score level 1-1 | Bogner Chess | https://www.bognerchess.com/en/events/world-chess-championship-2026 | Game 3 26 Nov 15:00 CET, Geneva — refresh R3 for result
+M7 | ASIA | Asia Cup Rising Stars semi-final 1 — unbeaten Sri Lanka A face India A | Indian Television | https://indiantelevision.com/television/india-a-face-unbeaten-sri-lanka-a-in-asia-cup-rising-stars-semi-final/ | 26 Nov 15:30 IST, Doha — refresh R4 for result
+M8a | EUROPE | Lille stun Bayern 2-1; PSG held 2-2 by Roma — perfect record ends | UEFA.com | https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/ | Wed 25 Nov night CET, first reported Thu 26 Nov morning Asia — verified 26 Nov 07:10 WIB via UEFA.com + AP + Flashscore (all 9 scores agree)
+M8b | EUROPE | Liverpool win 3-0, Barcelona 4-1; Man Utd held 2-2 at Sporting | UEFA.com | https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/ | Full Wed scores: Sabah 1-4 Barcelona, Slavia 0-1 Villarreal, Atletico 2-0 Viking, Club Brugge 0-3 Liverpool, Inter 2-0 Stuttgart, Shakhtar 0-1 Fenerbahce, Lille 2-1 Bayern, PSG 2-2 Roma, Sporting 2-2 Man Utd
+M9 | EUROPE | Europa League Matchday 5 — all 18 games on one night | UEFA.com | https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/ | 26 Nov 18:45 + 21:00 CET — refresh R2 for results (3-4 biggest)
+M10 | ASIA | India marks Constitution Day — 77th anniversary of adoption | PIB (Govt of India) | https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341449&reg=48&lang=2 | Samvidhan Divas 26 Nov 2026
+M11 | EUROPE | Spain heads to general election on Sunday — campaign's final weekend | EU Insider | https://www.euinsider.eu/news/eu-crunch-week-balkans-summit-budget-ukraine-spain-2026 | Vote 29 Nov — do NOT claim election results (not yet happened)
+
+## DISCARDED THIS MORNING (checked, not used — date doubt or 25 Nov)
+- "North Korea expels Swiss diplomat" — reported Wednesday 25 Nov (EIN Presswire). 25 Nov, NOT 26 Nov.
+- "US announces new tariffs on China/EU/others" — announced 25 Nov evening (trap list 2D). NOT 26 Nov.
+- "Houthis attacked two Saudi ports" (NDTV, 26 Nov 01:14 IST) — event date unverifiable from the snippet; could be the 23 Nov strikes. DISCARDED per doubt rule.
+- "China investigates Shanghai party chief" (Reuters) — report time ~25 Nov evening UTC; event date unverified. DISCARDED.
+- "Trump floats Huang pardon" / "Belgian court NATO intern" / "Thai house collapse, 32 students injured" / "Karachi building collapse" — all 25 Nov timestamps. DISCARDED.
+- Aggregator "26 Nov headlines" pages (selfstudys etc.) recycle 21-25 Nov items — NOT used as sources.
+
+## REFRESH SLOTS STILL OPEN (from research Section 2C — fill in the evening pass)
+R1 DONE (UCL Wed scores, see M8a/M8b above). Remaining: R2 Europa results, R3 chess G3 result,
+R4 cricket SF1 result, R5 NFL scores, R6 Macy's balloons outcome, R7 storm ACTUAL impact,
+R8 EU summit day-1 outcome, R9 Spain campaign headline, R10 Gaza 26 Nov, R11 Ukraine 26 Nov,
+R12 Ebola DRC update, R13 tariff responses 26 Nov, R14 Asia market closes, R15 Europe market
+closes, R16 commodities, R17 Poland airspace, R18 Ecuador IMF (verify date), R19 Indonesia mine
+rescue update, R20 Gulf of Mexico plane search update, R21 Australia, R22 NZ/Pacific, R23 Africa,
+R24 Latin America, R25 tech, R26 science, R27 culture, R28 climate/COP31, R29 breaking news.
+Target final: 36-40 stories total. If refresh yields only 30-35 verified, use 30-35 — do NOT fabricate.

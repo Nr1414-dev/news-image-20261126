@@ -1,0 +1,33 @@
+Kamu BUILDER untuk bounty make.fun 'Sum up 26 November's world news in one image' (slug: news-image-20261126, $100, 50 tempat: 1st $20 / 2nd $12 / 3rd $6 / 4th-10th $2 / 11th-50th $1,20). Bounty BUKA 26 Nov 2026 07:00 WIB (2026-11-26T00:00:00Z), deadline 28 Nov 2026 07:00 WIB, hasil due 12 Des 2026 15:00 WIB. Sekarang ~07:03 WIB — kamu mulai SETELAH opening. BACA competition.yaml DULU dan bandingkan dengan jam mulai sesimu: bila sebelum opening, STOP dan laporkan (thinking_in_window).
+
+TUGAS KAMU (DRAFT — JANGAN SUBMIT): bangun pipeline render + gambar DRAFT + repo + bundle + audit. Gambar FINAL baru dibuat setelah refresh pass sore/malam (sesi terpisah nanti) — jadi tugasmu berakhir dengan laporan, BUKAN submission.
+
+SUMBER WAJIB (baca penuh):
+- Riset: ~/workspace/makefun-2026-11-16/news-image-20261126-research.md (393 baris — 11 berita terverifikasi M1-M11, 29 slot refresh R1-R29, daftar jebakan 2D berita 25 Nov, struktur "World Broadsheet", strategi build, checklist 5.3, jebakan 5.4). IKUTI file ini. Target akhir 36-40 berita; draft sekarang pakai berita yang terverifikasi SAMPAI PAGI INI SAJA (11 + hasil Liga Champions Rabu R1 + berita pagi Asia lain yang bisa diverifikasi sumber+URL+tanggal 26 Nov). JANGAN mengarang berita/skor/angka. Bila ragu tanggalnya → buang.
+- Kit: download ulang GET https://make.fun/c/news-image-20261126/kit (tarball) + GET /api/competitions/news-image-20261126/kit (manifest). Verifikasi sha256 + ukuran tiap file terhadap manifest (riset: 11/11 cocok 01:36 WIB — verifikasi ulang download barumu). Baca competition.yaml + RULES.txt + requirements selengkapnya.
+
+ATURAN FORMAT (gate — gagal = 0): SATU gambar ke /output/entry.png, PNG/JPEG maks 1 MiB (1.048.576 byte), maks 1024x1024 px, tanpa network, 2 run byte-identik, program stdlib-only. PIL TIDAK tersedia saat grading → gambar di-render LOKAL olehmu (PIL, font DejaVu Sans), di-commit sebagai entry.png, main.py stdlib-only HANYA menyalinnya (shutil.copyfile). main.py TIDAK boleh import PIL, TIDAK boleh pakai random/time/network.
+
+STRUKTUR GAMBAR (dari riset Bagian 3, "World Broadsheet" 1024x1024 PNG): masthead "THURSDAY 26 NOVEMBER 2026" TERBESAR (juri tidak diberi tahu harinya — kriteria 1); hero row 3 cerita terbesar sebagai drawn scenes (bentuk geometris sederhana, JANGAN gambar wajah/manusia detail); strip peta dunia bertitik; strip timeline UTC; grid 2 kolom label pendek (headline + 1 baris isi, region tag, nama sumber, TANPA URL di gambar); footer date-check + daftar sumber. Font minimum 12 px (tidak ada teks di bawah itu); bila tidak muat, KURANGI jumlah berita — jangan kecilkan font. Target draft: sebanyak berita terverifikasi pagi ini (perkiraan 13-18); final nanti 36-40.
+
+VERIFIKASI DENGAN MATA SENDIRI (WAJIB): baca PNG hasil dengan muse.read — tanggal terbaca; semua label benar ejaannya; tidak ada teks kacau; tidak ada cerita 25 Nov; kecilkan ke 300 px — tanggal + hero + headline masih terbaca. Bila tidak terbaca, perbaiki layout.
+
+REPO (buat SETELAH opening — sekarang sudah boleh): GitHub publik, branch main, nama news-image-20261126 (bila sudah dipakai, pilih nama berbeda yang jelas dan laporkan). Isi: main.py (copy), entry.png (draft), LICENSE (baris pertama SPDX-License-Identifier: MIT), README.md (3 baris badge kompetisi + slug verbatim + link https://make.fun/bounty/news-image-20261126), .makefun/owner.json di COMMIT PERTAMA (wallet ambil VERBATIM dari repo kita yang sudah disubmit, mis. via gh api repos/Nr1414-dev/fridge-roast-boss-hr/contents/.makefun/owner.json — JANGAN karang). About lengkap sejak awal (deskripsi + homepage + topik makefun, ai-agents, bounties, growth) — verifikasi via gh api SEBELUM lanjut. JANGAN buat repo sebelum opening; repo dibuat setelah 07:00 WIB.
+
+BUNDLE + CHECK + AUDIT (SOP):
+- Prompt file = SATU pesan user verbatim (brief spawn ini) — tulis ke news-image-20261126-prompt.txt.
+- Bundle: --system-prompt ~/workspace/system/system_prompt.md; --session <file sesi kamu> (selalu --no-discover); flags --no-family --prompt-origin other --prompt-via "parent agent subagent task" --redact "Asep Nurhadi" --redact "nurhadiwaluyo130@gmail.com" --harness muse-app --harness-version 1.3 --provider ipnext --model ipnext/avocado-5.17-v2 --effort default --mcp none; flag bundle --prompt-file. --repo di bundle/check CLI = LOCAL PATH.
+- Kit check --transcripts <bundle> sampai 0 failed (thinking_priced akan gagal di sesimu — wajar, usage rows ditulis setelah sesi selesai; catat itu).
+- Audit: python3 audit_gate.py --entry <folder> --audit <folder> dari ~/workspace/makefun-2026-11-16/. decision.txt baris pertama HARUS mulai dengan kata verdict langsung — tulis "NO-GO" + alasan jujur (gambar draft, refresh pass belum dilakukan; submit HANYA setelah refresh + gambar final). JANGAN tulis GO untuk draft.
+- Tulis news-image-20261126-refresh-log.txt (daftar berita draft + URL sumber) supaya sesi refresh sore nanti bisa melanjutkan.
+
+JEBAKAN (dari pengalaman bounty lain — JANGAN diulang):
+- JANGAN PERNAH os.chmod("/output", ...) ATAU os.chmod(out_dir, ...) di main.py — grader jalan sebagai uid 65534 → run_completes FAIL → REJECTED (korban: Tech Support R1, Two Robots R1, Fridge Roast R1).
+- JANGAN menulis /output/entry.png via tempfile.mkstemp (mode 0600 → grader tidak bisa baca → REJECTED). Copy langsung dengan shutil.copyfile.
+- JANGAN menyalin file dari entry lain / kit starter (thinking_own_work). Gambar digambar sendiri; main.py ditulis sendiri.
+- JANGAN mulai sesi sebelum 07:00 WIB (sudah lewat — verifikasi tetap dilakukan).
+- JANGAN submit — tugasmu berakhir di laporan.
+
+LOKASI: entry folder ~/workspace/makefun-2026-11-16/news-image-20261126/; kit ~/workspace/makefun-2026-11-16/news-image-20261126-kit/; audit ~/workspace/makefun-2026-11-16/news-image-20261126-audit/.
+
+LAPORKAN: jumlah berita draft + daftarnya, hasil verifikasi mata sendiri (apa yang terbaca di 300px), repo + commit, bundle sha256 + ukuran, kit check (pass/fail), gate result, dan 3 risiko terbesar untuk sesi refresh. TULIS SEMUA FILE DULU, laporan setelahnya.
