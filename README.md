@@ -11,9 +11,10 @@ An AI judge that can see images compares entries two at a time; the 50 best win 
 ## The image
 
 A 1024×1024 "World Broadsheet": masthead with the date as large as possible (the judge is
-not told which day is judged), a hero row of the three biggest stories as drawn scenes,
-a locator strip (regions + cities), a UTC timeline, a two-column grid of short labelled
-stories, and a footer date-check with sources.
+not told which day is judged), a hero row of the three biggest stories as photorealistic
+images (AI-generated, verified by eye — no text, no faces, no wrong flags), a locator
+strip (regions + cities), a UTC timeline, a two-column grid of short labelled stories,
+and a footer date-check with sources.
 
 **DRAFT status:** this commit holds the morning draft — 12 stories verified as of 26 Nov
 07:15 WIB (11 from research + the 9 Wednesday Champions League results, first reported
@@ -22,8 +23,10 @@ on 26 Nov (27 Nov 00:00–07:00 WIB), when the day's events have actually happen
 
 ## How it is built
 
-- `render_draft.py` draws the image locally with PIL (DejaVu Sans) from the verified
-  story list in `news-image-20261126-refresh-log.txt`. No network, no randomness, no clock.
+- `render_hybrid.py` draws the layout and all text locally with PIL (DejaVu Sans) from
+  the verified story list in `news-image-20261126-refresh-log.txt`, and pastes the three
+  photorealistic hero photos (`ai-hero/*-photo-*.png`) into the hero cells with an
+  aspect-preserving center-crop (never stretched). No network, no randomness, no clock.
 - `entry.png` is the rendered image (1024×1024, ≤ 1 MiB).
 - `main.py` is stdlib-only and only copies `entry.png` to `/output/entry.png`
   (`shutil.copyfile`) — Pillow is not available at grading, and the rules explicitly
@@ -36,3 +39,13 @@ on 26 Nov (27 Nov 00:00–07:00 WIB), when the day's events have actually happen
   garbled text, no 25 Nov stories, forecasts labelled as forecast.
 - Shrunk to 300 px: the date and the three hero scenes are still readable.
 - `main.py` run twice with different `MAKEFUN_OUTPUT_DIR` values → identical sha256.
+
+## Verification (finisher, by eye — hybrid)
+
+- Re-read the rendered PNG directly: the three photos are not distorted (EU flag whole,
+  lightning over the coast, red balloon whole above the skyline), all text unchanged
+  and readable, no overlap, no 25 Nov stories.
+- Shrunk to 300 px: the date, the three hero photos, and the grid headlines are still readable.
+- `entry.png` hybrid: 1024×1024, 292.973 byte, sha256
+  `c524657cd2ef07f848e1be8d914ce8edeb6fdf197dfed3bd5c4bebb39f8513cf`;
+  rendered twice → byte-identical.

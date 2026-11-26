@@ -38,3 +38,23 @@ closes, R16 commodities, R17 Poland airspace, R18 Ecuador IMF (verify date), R19
 rescue update, R20 Gulf of Mexico plane search update, R21 Australia, R22 NZ/Pacific, R23 Africa,
 R24 Latin America, R25 tech, R26 science, R27 culture, R28 climate/COP31, R29 breaking news.
 Target final: 36-40 stories total. If refresh yields only 30-35 verified, use 30-35 — do NOT fabricate.
+
+## HYBRID UPDATE (finisher, 26 Nov 2026 ~07:50 WIB — Hadi chose PHOTOS)
+- Hero scenes in entry.png are now PHOTOREALISTIC AI images (parent-generated,
+  verified by eye: no text, no faces, no wrong flags), pasted by
+  render_hybrid.py with a center-crop that preserves aspect ratio
+  (focus_y: EU 0.41, storm 0.42, Macy's 0.30 — balloon top kept whole).
+  Layout + ALL text unchanged (PIL, exact spelling/numbers).
+- Files used (committed under ai-hero/):
+  * media-generation-hero-eu-summit-photo-0-a9d1c776-e06c-4eda-af39-75b7d925d7ac.png
+  * media-generation-hero-noreaster-photo-0-57005af2-8dc0-4bbc-87d7-394d6b14842d.png
+  * media-generation-hero-macys-parade-photo-0-62793082-b46f-44a4-a196-3896a5765fd4.png
+- VECTOR versions (media-generation-hero-eu-summit-0-*.png,
+  hero-noreaster-0-*.png, hero-macys-parade-0-*.png) are REJECTED by Hadi —
+  do NOT use them in the final image.
+- Hybrid entry.png: 1024x1024, 292.973 byte, sha256
+  c524657cd2ef07f848e1be8d914ce8edeb6fdf197dfed3bd5c4bebb39f8513cf,
+  render 2x byte-identical. Verified by eye at full size + 300px wide.
+- Refresh session: keep the same 3 PHOTO heroes in the final image
+  (re-crop only if the hero story changes); do NOT revert to vector or
+  to the geometric PIL scenes.
