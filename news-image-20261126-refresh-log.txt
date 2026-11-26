@@ -1,60 +1,128 @@
-# Refresh log — news-image-20261126 (DRAFT, 26 Nov 2026 ~07:15 WIB)
-# Status: DRAFT. 12 stories verified. Final image (36-40 stories) after the
-# evening refresh pass 26 Nov sore/malam UTC (= 27 Nov 00:00-07:00 WIB).
-# Rules: every added story needs title + source + URL + 26 Nov event date.
-# If in doubt about the date -> DISCARD. Do NOT fabricate scores/numbers.
-# Trap list (25 Nov and earlier, do NOT use as 26 Nov news): see research
-# file Section 2D (news-image-20261126-research.md).
+# Refresh log — news-image-20261126 (FINAL, 27 Nov 2026 ~06:30 WIB)
+# Status: FINAL. 36 stories verified (11 base M1-M11 + 25 refresh).
+# Rendered by render_final.py -> entry.png 1024x1024, 330.954 byte, sha256
+# 678d1575f48bfb3e46572541b918eadeb599cb5c519abd0e7c92810fd4a8fd62.
+# Verified by eye at full size + 300 px wide. main.py 2 runs -> sha256 identik.
+# Rules: every story has title + source + URL + 26 Nov event date.
+# If in doubt about the date -> DISCARDED. Nothing fabricated.
+# Trap list (25 Nov and earlier, do NOT use as 26 Nov news): research file 2D.
+#
+# DATE NUANCE — MACY'S (flagged for the parent): the postponement was ANNOUNCED
+# Wed 25 Nov evening (NY Post / CNN articles dated 25 Nov). The image presents
+# the 26 Nov FACT (no parade marched on Thanksgiving Day, first time ever in
+# 100 years; rescheduled to Sat 28 Nov) — it does NOT claim an announcement
+# date. The research file's R6 explicitly asked for this outcome.
+# NFL NOTE: only Bears-Lions final (39-35) was available in the refresh window.
+# Eagles-Cowboys ends ~07:30 WIB 27 Nov, Chiefs-Bills ~11:30 WIB 27 Nov — both
+# after the window; they are NOT in the image.
+# MARKET NOTE: Asia closes use the CLOSE figures (Nikkei 57,499.16 +0.86%,
+# Hang Seng 22,226.88 +1.19%). An earlier AP wire quoted INTRADAY levels
+# (Nikkei 57,768.92 +1.3%) — NOT used. Europe closes: DAX 25,231.42 +2.14%,
+# FTSE 10,609.30 +1.75%, CAC 8,108.74 +1.61% (investinglive / QNA / stocknow
+# agree; COINOTAG intraday figures NOT used).
+# CASUALTY NOTE (R11/R17): both describe the same overnight 25-26 Nov barrage.
+# The image carries NO death toll in either cell to avoid contradictory figures
+# (AP: 2 killed Kharkiv; Nexus Europa: 3 dead, 15 injured Kyiv — different
+# parts of the same barrage).
 
-## DRAFT STORIES (12) — verified this morning
-# Format: ID | region | headline | source | URL | note
-M1 | EUROPE | EU leaders open special summit on EUR 1.78tn budget and EUR 45bn Ukraine loan | EU Insider | https://www.euinsider.eu/news/eu-crunch-week-balkans-summit-budget-ukraine-spain-2026 | Summit opens 26 Nov ~11:00 UTC, Brussels; conclusions Fri 27 Nov
-M2 | N. AMERICA | Thanksgiving Day — 81.5 million Americans travel; US markets closed | AAA via NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | 26 Nov all day (US)
-M3 | N. AMERICA | Thanksgiving nor'easter brings heavy rain, 40-55 mph gusts, coastal flooding | NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | FORECAST at draft time (23-24 Nov forecast) — refresh R7 must replace with ACTUAL 26 Nov impact numbers
-M4 | N. AMERICA | 100th Macy's Thanksgiving Day Parade — giant balloons at risk of grounding | NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | FORECAST at draft time — refresh R6: did the balloons fly or get grounded?
-M5 | N. AMERICA | NFL Thanksgiving tripleheader: Bears-Lions, Eagles-Cowboys, Chiefs-Bills | USA Today | https://www.usatoday.com/story/sports/nfl/2026/11/25/nfl-game-tonight-thanksgiving-schedule-week-12/92847679007/ | Games 26 Nov 13:00/16:30/20:20 ET — refresh R5 for final scores
-M6 | EUROPE | World Chess Championship Game 3 — Sindarov has White, score level 1-1 | Bogner Chess | https://www.bognerchess.com/en/events/world-chess-championship-2026 | Game 3 26 Nov 15:00 CET, Geneva — refresh R3 for result
-M7 | ASIA | Asia Cup Rising Stars semi-final 1 — unbeaten Sri Lanka A face India A | Indian Television | https://indiantelevision.com/television/india-a-face-unbeaten-sri-lanka-a-in-asia-cup-rising-stars-semi-final/ | 26 Nov 15:30 IST, Doha — refresh R4 for result
-M8a | EUROPE | Lille stun Bayern 2-1; PSG held 2-2 by Roma — perfect record ends | UEFA.com | https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/ | Wed 25 Nov night CET, first reported Thu 26 Nov morning Asia — verified 26 Nov 07:10 WIB via UEFA.com + AP + Flashscore (all 9 scores agree)
-M8b | EUROPE | Liverpool win 3-0, Barcelona 4-1; Man Utd held 2-2 at Sporting | UEFA.com | https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/ | Full Wed scores: Sabah 1-4 Barcelona, Slavia 0-1 Villarreal, Atletico 2-0 Viking, Club Brugge 0-3 Liverpool, Inter 2-0 Stuttgart, Shakhtar 0-1 Fenerbahce, Lille 2-1 Bayern, PSG 2-2 Roma, Sporting 2-2 Man Utd
-M9 | EUROPE | Europa League Matchday 5 — all 18 games on one night | UEFA.com | https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/ | 26 Nov 18:45 + 21:00 CET — refresh R2 for results (3-4 biggest)
-M10 | ASIA | India marks Constitution Day — 77th anniversary of adoption | PIB (Govt of India) | https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341449&reg=48&lang=2 | Samvidhan Divas 26 Nov 2026
-M11 | EUROPE | Spain heads to general election on Sunday — campaign's final weekend | EU Insider | https://www.euinsider.eu/news/eu-crunch-week-balkans-summit-budget-ukraine-spain-2026 | Vote 29 Nov — do NOT claim election results (not yet happened)
+## FINAL STORIES (36) — 3 heroes + 33 grid cells
+# Format: ID | region | headline (as in image) | source | URL | note
+M1-HERO | EUROPE | EU summit ends day 1 with no deal | AP; Helsinki Times | https://www.reflector.com/news/national/eu-leaders-split-over-budget-spending-and-a-49-billion-loan-to-ukraine/article_2de4548f-1652-54af-b5ba-b83952609434.html | Day 1, 26 Nov: no deal after 12+ hrs; EUR 1.582tn 2028-2034 budget + EUR 45bn Ukraine loan split; next summit 17-18 Dec. Also: https://www.helsinkitimes.com/world-int/29540-eu-leaders-divided-over-1-58-trillion-budget-and-new-45-billion-loan-for-ukraine.html
+M2 | N. AMERICA | Thanksgiving: 81.5m travel | AAA via NY Post | https://nypost.com/2026/11/24/lifestyle/thanksgiving-travel-weather-winter-storms-and-delays-forecast/ | Thanksgiving Day 26 Nov; ~81.5m Americans travel; US markets closed
+M3-HERO | N. AMERICA | Thanksgiving nor'easter | The Traveler; AeroCorner | https://www.thetraveler.org/thanksgiving-storm-snarls-us-travel-cuts-power-to-hundreds-of-thousands/ | ACTUAL 26 Nov: well over 1,000 flights cancelled by early afternoon, several thousand delayed; >1m customers without power (PowerOutage.us); NY/NJ emergencies. Also: https://aerocorner.com/news/thanksgiving-east-coast-storm-flight-cancellations-november-26/
+M4-HERO | N. AMERICA | 100th Macy's Parade | NY Post; CNN | https://nypost.com/2026/11/25/us-news/macys-thanksgiving-day-parade-postponed-due-to-noreaster-first-time-ever-due-to-weather/ | Postponed to Sat 28 Nov, first time ever due to weather; see DATE NUANCE above. Also: https://www.cnn.com/2026/11/25/us/macys-thanksgiving-day-parade-postponed
+M5 | N. AMERICA | Bears stun Lions 39-35 | Reuters | https://www.reuters.com/sports/nfl/bears-rally-take-down-lions-control-nfc-north--flm-2026-11-26/ | Bears beat Lions 39-35, Ford Field; Williams -> Odunze 6-yd TD with 3 sec left; Bears 9-2, top NFC North
+M6 | EUROPE | Chess Game 3: draw in 60 | Chess.com; ChessBase India | https://www.chess.com/news/view/2026-fide-world-chess-championship-game-3?page=2 | Game 3 DRAW after 60 moves; score 1.5-1.5; Sindarov (White) ~8 sec before move 40; Gukesh's Rio de Janeiro Variation of the Berlin. Also: https://chessbase.in/news-bites/game-3-ends-in-a-draw-after-60-moves
+M7 | ASIA | SL A win semi by 8 wickets | ESPNcricinfo | https://www.cricinfo.com/series/asia-cup-rising-stars-50-overs-2026-27-1562333/india-a-vs-sri-lanka-a-1st-semi-final-1562354/match-report | SL A 318/2 in 41.3 overs chase India A 317/8 (Croospulle 118, Jayawardena 105); SL A into final 29 Nov
+M8a | EUROPE | Lille stun Bayern 2-1 | UEFA.com | https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/ | UCL Wed results, first reported Thu 26 Nov morning Asia: Lille 2-1 Bayern; PSG 2-2 Roma
+M8b | EUROPE | Liverpool win 3-0, Barca 4-1 | UEFA.com | https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/ | UCL Wed: Club Brugge 0-3 Liverpool; Sabah 1-4 Barcelona; Sporting 2-2 Man Utd
+M9 | EUROPE | Plzen thrash Benfica 4-0 | Reuters; Sportradar | https://www.reuters.com/sports/soccer/bournemouth-milan-complete-comebacks-benfica-thumped-czech-nightmare-2026-11-26/ | Europa League MD5, 26 Nov, all 18 scores verified: Plzen 4-0 Benfica; Olympiacos 2-4 Milan; Celta 1-2 Bournemouth; Juventus 4-1 Omonia; Crystal Palace 2-1 Real Sociedad; Besiktas 2-1 Hapoel Beer-Sheva; Dinamo 0-2 Leverkusen; Marseille 1-0 Levski; Salzburg 2-0 Ararat-Armenia; Union SG 2-2 Lech; Ferencvaros 0-0 Celje; NEC 3-1 Rennes; OFI 1-3 Anderlecht; Lyon 0-0 Lillestrom; Torreense 1-2 Celtic; Sparta 2-4 AZ; Sunderland 1-1 Jagiellonia; Hoffenheim 3-1 Sturm Graz. Also: https://sportnewsafrica.com/en/fixtures/europa-league/
+M10 | ASIA | India marks Constitution Day | PIB (Govt of India) | https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341449&reg=48&lang=2 | Samvidhan Divas 26 Nov 2026, 77th anniversary of adoption
+M11 | EUROPE | Spain votes Sunday; PP leads | The Bubble; Clash Report | https://sub.thebubble.com/p/who-wins-the-general-election | Vote Sun 29 Nov; final polls (pre-blackout 23 Nov): PP ~31.4%, PSOE ~29.1%, Vox ~17-18%; PP+Vox above 176 majority in most polls; CIS outlier PSOE 34.4%. Also: https://clashreport.com/world/articles/spain-election-2026-polls-pp-vox-8vgvtsakyeq
+R10 | MIDEAST | Gaza: 9 killed in strikes | Reuters; CNN | https://www.reuters.com/world/middle-east/israel-kills-nine-gaza-including-hamas-appointed-deputy-education-minister-2026-11-26/ | Overnight strikes kill 9 incl. Hamas deputy education minister Khaled Abu Nada (+ wife) in Deir al-Balah; 3rd consecutive night despite 1-yr ceasefire; 1,600+ killed since Oct 2025; Defence Min Katz threatens Gideon's Chariots II / moving ~1m Gazans south. Also: https://www.cnn.com/2026/11/26/middleeast/israel-gaza-assassinations-intl
+R11 | EUROPE | 113 drones hit Ukraine | AP; Reuters | https://dailyfoxnews.com/news/36313/zelenskyy-warns-of-imminent-major-russian-attack-on-ukraine-s-power-grid | Overnight 25-26 Nov: Russia hits Kyiv + 7 regions with ballistic missiles + 113 drones; power cut in 7 regions; DTEK plant halted; Zelensky warns of another major strike; Ukraine hits Nevinnomyssk power plant + Slavyansk ECO refinery (Krasnodar, serious damage). Also: https://www.reuters.com/business/energy/russian-oil-refinery-krasnodar-region-fire-after-drone-attack-2026-11-26/
+R12 | AFRICA | Ebola cases pass 12,000 | Reuters | https://www.reuters.com/business/healthcare-pharmaceuticals/congos-ebola-cases-exceed-12000-responders-struggle-contain-outbreak-2026-11-26/ | Govt data Thu 26 Nov: 12,021 confirmed cases, 5,904 dead; 2nd-largest outbreak on record; Bundibugyo species (no approved vaccine/treatment); 8 of 26 provinces; clashes in Ituri hamper response
+R13 | GLOBAL | Tariff backlash: China, EU | AP; The National | https://dailyfoxnews.com/news/34849/china-and-others-express-anger-regret-over-new-us-tariff-hikes | Reactions Thu 26 Nov to USTR Section 301 tariffs announced 25 Nov (14 economies): China 20% (could double to 40%), EU 15%, Japan 15%, Vietnam up to 35%, India 17%, Singapore up to 20%; China/Japan/EU/Singapore/Malaysia protest; Brazil calls separate action "unacceptable". Also: https://thenational.co.za/news/2026-11-26-major-economies-balk-at-new-us-tariffs-over-unfair-trade/
+R14 | ASIA | Asia stocks rebound | AP; SKN Finance | https://connect.netscape.com/news/world/story/0001/20261126/320cd8c9c286a7773797bf2f478ef314 | Closes 26 Nov: Nikkei 57,499.16 +0.86%; Hang Seng 22,226.88 +1.19%; Shanghai 3,476.88 +0.01%; KOSPI 4,711.21 +0.29%; ASX 8,763.80 +0.82%; Sensex 84,328.59 +0.46%; Taiex +2.5%. Also: https://skn-finance.com/skn-asian-markets-rebound-on-november-26-2026-as-hang-seng-gains-1-19-and-nikkei-advances-0-86/
+R15 | EUROPE | Europe rallies on tariff relief | InvestingLive; QNA | https://investinglive.com/stocks/european-stocks-surge-s-p-500-futures-finish-higher-in-thanksgiving-trading/ | Closes 26 Nov: STOXX 600 +1.83%; DAX 25,231.42 +2.14%; FTSE 10,609.30 +1.75%; CAC 8,108.74 +1.61%; FTSE MIB +2.36%; IBEX +2.35%; US markets shut for Thanksgiving. Also: https://www.fananews.com/language/en/european-stocks-close-higher-23/
+R16 | GLOBAL | Gold rebounds; Brent $94.71 | Stockbiz; Capital Street FX | https://stockbiz.vn/en/news/markets-on-november-26-oil-rises-again-on-middle-east-risks-gold-plunges-before-turning-higher/42920955 | Gold fell below $3,500 Wed (15-month low ~$3,446), recovered to ~$3,581 Thu; Brent $94.71, WTI $84.03 after Houthi claim of attack on Saudi Ras Tanura refinery. Also: https://www.capitalstreetfx.com/market-analysis/daily-commodity-report-26-nov-2026/
+R17 | EUROPE | Russian drone enters Poland | Nexus Europa | https://nexuseuropa.eu/en/top-news/2026-11-26-1400 | Russian drone briefly crosses Polish border during overnight strikes on Ukraine; NATO jets (Polish + Swedish) + tanker monitor airspace; sirens in Lublin/Podkarpacie. See CASUALTY NOTE above.
+R19 | ASIA | 13 dead in Indonesia mine | Reuters | https://www.reuters.com/world/asia-pacific/indonesian-rescuers-resume-search-13-people-trapped-inside-illegal-mine-after-13-2026-11-26/ | Illegal gold mine, Bogor, West Java: 13 confirmed dead, 13 still trapped 100m underground; heavy rain halts search Thu; mine flooded Mon 23 Nov
+R20 | N. AMERICA | Gulf crash: ATC had warned | NGlobeNews (AP) | https://nglobenews.com/en/article/us-horn-island-cessna-crash-six-missing-search-2026-11-24/ | 26 Nov update: ATC recordings (LiveATC) show controller warned pilot Brent Stokes of precipitation/adverse weather before contact lost; Cessna 210 crashed Tue 24 Nov off Horn Island, 6 dead (incl. 3 children); NTSB investigating. Crash itself 24 Nov — the 26 Nov news is the recordings.
+R21 | OCEANIA | Flinders Island wildfires | AP via Phys.org | https://phys.org/news/2026-11-wildfires-raze-homes-displace-wildlife.html | Wildfires raze homes, burn >10% of Flinders Island (Tasmania); 10-m flames; residents sheltering in place; road closures
+R22a | OCEANIA | NZ unveils $1.9bn ferries | B2B News (RNZ) | https://b2bnews.co.nz/news/cook-strait-ferry-designs-unveiled-as-1-point-9b-port-risk-looms/ | Cook Strait ferry designs unveiled 26 Nov: two hybrid rail-enabled vessels (Guangzhou Shipyard), due 2029; total $1.9bn
+R22b | OCEANIA | NZ final count due Friday | Reuters | https://www.reuters.com/world/asia-pacific/final-new-zealand-election-vote-count-confirm-parliament-make-up-2026-11-26/ | Official result due Fri 27 Nov (2pm, incl. ~400,000 special votes); incumbent coalition holds razor-slim 2-seat majority on prelims; 4 seats close enough to flip
+R23a | AFRICA | Guinea-Bissau delays vote | Reuters | https://www.reuters.com/world/africa/guinea-bissau-delays-elections-extending-military-led-transition-year-after-coup-2026-11-26/ | Military leaders delay presidential + legislative elections by ~2 years, a year after the coup; 1-yr transition promise broken
+R24 | S. AMERICA | Lula opens Amazon Summit | Adalytica | https://adalytica.com/news/brazil-colombia-amazon-summit-violence-febfae8b | Lula arrives in Bogota Thu for Amazon Summit; Brazil takes presidency of 8-nation forum; summit shadowed by Colombia violence (Cali bomb, helicopter downed in Antioquia, 12 dead)
+R25a | N. AMERICA | SpaceX: 1m satellites cleared | The Neuron; AI.info | https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-26-2026/ | FCC conditionally authorises SpaceX to deploy up to 1m satellites for Starmind orbital AI data centres. Also: https://ai.info/daily/2026-11-26
+R25b | N. AMERICA | NY bans AI chatbot toys | The Neuron; AI.info | https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-26-2026/ | NY Gov Hochul signs law banning manufacture/sale of AI chatbot toys for 5 years. Also: https://ai.info/daily/2026-11-26
+R25c | N. AMERICA | FDA clears Neuralink trial | AI Weekly | https://aiweekly.co/ai-news-today/edition/2026-11-26 | FDA clears Neuralink to begin LINK, first US pivotal trial of implantable brain-computer interface, in adults with severe ALS paralysis
+R26 | GLOBAL | Pulsar flees supernova | Phys.org | https://phys.org/news/2026-11-runaway-pulsar-remnant-supernova.html | Runaway pulsar J1909+0749 escaped its supernova remnant shell; transverse velocity >1,400 km/s, one of the fastest Milky Way pulsars; paper accepted in Astronomy & Astrophysics
+R27 | ASIA | Tim Burton show opens Tokyo | AnewZ | http://anewz.tv/culture/culture-news/27290/five-culture-stories-making-headlines-worldwide/news | Tim Burton's Labyrinth opens in Tokyo, Asian debut; rooms inspired by Beetlejuice, Edward Scissorhands, The Nightmare Before Christmas
+R29a | N. AMERICA | Trump's Thanksgiving rant | Reuters | https://www.reuters.com/world/us/trump-uses-thanksgiving-message-lash-out-political-foes-immigrants-federal-2026-11-26/ | Trump uses Thanksgiving message on Truth Social to attack liberals, immigrants, a federal agency; GOP lost both chambers in 3 Nov midterms
+R29b | N. AMERICA | Trump demands GDP probe | Reuters | https://www.reuters.com/world/us/trump-demands-probe-gdp-data-released-before-midterms-2026-11-26/ | Trump demands immediate probe into GDP data released before the midterms, alleging deliberate timing
+R29c | MIDEAST | 2 Italians killed in Kuwait | Reuters | https://www.reuters.com/world/asia-pacific/two-italians-killed-iranian-drone-attack-kuwait-italy-says-2026-11-26/ | Two Italians killed in Iranian drone attack in Kuwait Thu; victims were technicians for the Italian unit of German defence group Rheinmetall
+R29d | ASIA | N. Korea halts missile exports | Reuters | https://www.reuters.com/business/aerospace-defense/ukraine-says-north-korea-temporarily-halted-missile-shipments-ally-russia-2026-11-26/ | Ukraine military intelligence: North Korea temporarily halted some military cooperation with Russia, incl. KN-23 ballistic missile deliveries, after diplomatic tensions
 
-## DISCARDED THIS MORNING (checked, not used — date doubt or 25 Nov)
-- "North Korea expels Swiss diplomat" — reported Wednesday 25 Nov (EIN Presswire). 25 Nov, NOT 26 Nov.
-- "US announces new tariffs on China/EU/others" — announced 25 Nov evening (trap list 2D). NOT 26 Nov.
-- "Houthis attacked two Saudi ports" (NDTV, 26 Nov 01:14 IST) — event date unverifiable from the snippet; could be the 23 Nov strikes. DISCARDED per doubt rule.
-- "China investigates Shanghai party chief" (Reuters) — report time ~25 Nov evening UTC; event date unverified. DISCARDED.
-- "Trump floats Huang pardon" / "Belgian court NATO intern" / "Thai house collapse, 32 students injured" / "Karachi building collapse" — all 25 Nov timestamps. DISCARDED.
-- Aggregator "26 Nov headlines" pages (selfstudys etc.) recycle 21-25 Nov items — NOT used as sources.
+## REFRESH SLOTS — COVERAGE
+# Filled: R1 (UCL Wed scores), R2 (Europa results), R3 (chess), R4 (cricket),
+# R5 (NFL Bears only — see NFL NOTE), R6 (Macy's), R7 (storm actual), R8 (EU
+# summit day 1), R9 (Spain polls), R10 (Gaza), R11 (Ukraine), R12 (Ebola),
+# R13 (tariffs), R14 (Asia markets), R15 (Europe markets), R16 (commodities),
+# R17 (Poland), R19 (Indonesia mine), R20 (Gulf crash ATC), R21 (Australia
+# wildfires), R22 (NZ ferries + NZ election), R23 (Guinea-Bissau + Ebola),
+# R24 (Amazon Summit), R25 (SpaceX + NY AI toy ban + Neuralink), R26 (pulsar),
+# R27 (Tim Burton), R29 (Trump x2, Kuwait, N. Korea). 27 of 29 slots filled.
+# EMPTY (date-verified as NOT 26 Nov, correctly left out):
+# R18 Ecuador IMF — board decision 23 Nov, press release 24 Nov (IMF PR 26/377).
+# R28 COP31 — talks ended WITHOUT agreement, gavel Sun 22 Nov (Carbon Brief /
+# KBC analysis pieces dated 26 Nov are commentary on the 22 Nov outcome).
 
-## REFRESH SLOTS STILL OPEN (from research Section 2C — fill in the evening pass)
-R1 DONE (UCL Wed scores, see M8a/M8b above). Remaining: R2 Europa results, R3 chess G3 result,
-R4 cricket SF1 result, R5 NFL scores, R6 Macy's balloons outcome, R7 storm ACTUAL impact,
-R8 EU summit day-1 outcome, R9 Spain campaign headline, R10 Gaza 26 Nov, R11 Ukraine 26 Nov,
-R12 Ebola DRC update, R13 tariff responses 26 Nov, R14 Asia market closes, R15 Europe market
-closes, R16 commodities, R17 Poland airspace, R18 Ecuador IMF (verify date), R19 Indonesia mine
-rescue update, R20 Gulf of Mexico plane search update, R21 Australia, R22 NZ/Pacific, R23 Africa,
-R24 Latin America, R25 tech, R26 science, R27 culture, R28 climate/COP31, R29 breaking news.
-Target final: 36-40 stories total. If refresh yields only 30-35 verified, use 30-35 — do NOT fabricate.
+## DISCARDED DURING THIS REFRESH (checked, not used — date doubt or 25 Nov)
+- Sinner out of Australian Open — 25 Nov (research trap list 2D); the One Turn
+  listing that grouped it under 26 Nov was wrong.
+- Australia-Solomon Islands security treaty — 25 Nov (research trap list 2D).
+- Australia Digital Duty of Care Bill — passed Wed 25 Nov (reported Thu 26 Nov).
+- UC San Diego mini-brains / Alzheimer's study — published Wed 25 Nov in
+  Science Advances (widely reported 26 Nov, but the event is 25 Nov).
+- Iowa lead-azide blast — detonation Wed 25 Nov (Reuters newsletter 26 Nov).
+- Pope Leo on COP31 failure — the failure itself was 22 Nov.
+- Thai/Myanmar mining pollution, Canada methane flaring, FEWS NET staff cuts —
+  Reuters Sustainable Switch 26 Nov items with unverifiable event dates.
+- Venezuela public debt $237.5bn — Breitbart proxy-mirror URL only; source
+  quality too weak for the audit log.
+- Venezuela-Siemens grid deal, South America 2035 Rugby World Cup bid — no
+  verifiable 26 Nov date in the snippets.
 
-## HYBRID UPDATE (finisher, 26 Nov 2026 ~07:50 WIB — Hadi chose PHOTOS)
-- Hero scenes in entry.png are now PHOTOREALISTIC AI images (parent-generated,
-  verified by eye: no text, no faces, no wrong flags), pasted by
-  render_hybrid.py with a center-crop that preserves aspect ratio
-  (focus_y: EU 0.41, storm 0.42, Macy's 0.30 — balloon top kept whole).
-  Layout + ALL text unchanged (PIL, exact spelling/numbers).
-- Files used (committed under ai-hero/):
-  * media-generation-hero-eu-summit-photo-0-a9d1c776-e06c-4eda-af39-75b7d925d7ac.png
-  * media-generation-hero-noreaster-photo-0-57005af2-8dc0-4bbc-87d7-394d6b14842d.png
-  * media-generation-hero-macys-parade-photo-0-62793082-b46f-44a4-a196-3896a5765fd4.png
-- VECTOR versions (media-generation-hero-eu-summit-0-*.png,
-  hero-noreaster-0-*.png, hero-macys-parade-0-*.png) are REJECTED by Hadi —
-  do NOT use them in the final image.
-- Hybrid entry.png: 1024x1024, 292.973 byte, sha256
-  c524657cd2ef07f848e1be8d914ce8edeb6fdf197dfed3bd5c4bebb39f8513cf,
-  render 2x byte-identical. Verified by eye at full size + 300px wide.
-- Refresh session: keep the same 3 PHOTO heroes in the final image
-  (re-crop only if the hero story changes); do NOT revert to vector or
-  to the geometric PIL scenes.
+## REGIONS / FIELDS (final image)
+# Regions (8): EUROPE 9, N. AMERICA 10, ASIA 6, MIDEAST 2, AFRICA 2,
+# OCEANIA 3, S. AMERICA 1, GLOBAL 3 = 36 stories.
+# Fields: politics, economy/markets, weather, sport, culture, tech, science,
+# health, society/disaster.
+
+## LAYOUT (render_final.py)
+# World Broadsheet, 1024x1024: masthead (date 52px) + hero row 3 photo scenes
+# (EU summit / nor'easter / Macy's) + locator chips (2 rows, 8 regions) +
+# UTC timeline (6 events) + grid 3 cols x 11 rows (2-line cells: region code +
+# headline 16px / body 13px + source) + footer date-check.
+# Font minimums kept: date 52px, hero labels 20px, grid headlines 16px,
+# grid bodies 13px, footer 12px. Nothing below 12px.
+# Eye verification (refresher, 27 Nov ~06:20 WIB): read entry.png at full size
+# — date readable; all labels spelled correctly; no garbled text; no 25 Nov
+# stories; 8 regions. Two defects found in v1 and FIXED: (1) timeline title
+# overlapped the "04:45 UCL results" label (title shortened to "UTC TIMELINE");
+# (2) hero 1 source line "AP - Helsinki Times" clipped at the cell bottom
+# (photo 98->94px, label block moved up 4px). Re-read after fix: both clean.
+# 300px-wide check: date + 3 heroes + grid headlines still readable;
+# grid bodies small at that width (expected at 33-40 story density).
+# Technical: main.py 2 runs (MAKEFUN_OUTPUT_DIR /tmp/out1, /tmp/out2) ->
+# sha256 identical 678d1575f48bfb3e46572541b918eadeb599cb5c519abd0e7c92810fd4a8fd62;
+# size 330,954 byte (< 1 MiB); 1024x1024. main.py stdlib-only (shutil.copyfile),
+# no PIL, no chmod, no tempfile.
+
+## HYBRID NOTE (from the draft finisher, still true)
+# Hero scenes are PHOTOREALISTIC AI images (parent-generated, verified by eye:
+# no text, no faces, no wrong flags), pasted by render_final.py with a
+# center-crop that preserves aspect ratio (focus_y: EU 0.41, storm 0.42,
+# Macy's 0.30 — balloon top kept whole). Layout + ALL text drawn locally
+# with PIL. The 3 VECTOR heroes in ai-hero/ are REJECTED — do NOT use them.
